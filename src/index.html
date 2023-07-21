@@ -1,50 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=5.0"
-    />
-    <link rel="stylesheet" href="/css/homepage.min.css?v=20220908" />
 
-    <!-- favicon -->
-    <!-- [[$favicon]] -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=5.0" />
+  <link rel="stylesheet" href="/css/homepage.min.css?v=20220908" />
 
-    <title>[[*longtitle]]</title>
-    <meta name="description" content="[[*description]]" />
+  <!-- favicon -->
+  <!-- [[$favicon]] -->
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&subset=latin-ext&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&subset=latin-ext&display=swap"
-      media="print"
-      onload="this.media='all'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&subset=latin-ext&display=swap"
-      />
-    </noscript>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">header</header>
+  <title>[[*longtitle]]</title>
+  <meta name="description" content="[[*description]]" />
 
-      <main>main</main>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
 
-      <footer class="footer">footer</footer>
-    </div>
+</head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="/js/homepage.min.js?v=20220908"></script>
-  </body>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__column">
+        <div class="header__head container">
+          <div class="header__tel">
+            <a href="#">
+              020 8531 3413
+            </a>
+          </div>
+          <div class="header__broshure">
+            <a href="#">
+              REQUEST BROCHURE
+            </a>
+          </div>
+          <div class="header__slogan">
+            MORE THAN A KITCHEN
+          </div>
+        </div>
+        <div class="header__body container">
+          <a href="#" class="header__logo">
+            <img src="@img/Logo UM.svg" alt="Urbanmyth">
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  KITCHENS
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  BEDROOMS
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  ABOUT US
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  DEVELOPERS
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  BLOG
+                </a>
+              </li>
+            </ul>
+            <a class="header__btn button">
+              BOOK APPOINTMENT
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">
+        h1 title for seo
+      </h1>
+      <section class="prewiew">
+        <div class="container">
+          <h2 class="visually-hidden">
+            opening slogan
+          </h2>
+          <div class="prewiew__image">
+            <img src="@img/hero3.jpg" alt="">
+          </div>
+          <div class="prewiew__body">
+            <div class="prewiew__text">
+              Bespoke kitchens and bedrooms designed just for you. Our complete service means our experienced team is
+              with
+              you every step of the way.
+            </div>
+            <a href="#" class="prewiew__link button">
+              VIEW KITCHEN GALLERY
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="swiper">
+        <div class="container">
+          <div class="swiper__image">
+            <img src="@img/hero3.jpg" alt="">
+          </div>
+          <div class="swiper__body">
+            <h2 class="swiper__title">
+              Turning ideas into beautiful kitchens
+            </h2>
+            <div class="swiper__text">
+              The first step to your dream kitchen is a tour of our showroom and a free consultation with a designer. 
+            </div>
+            <a class="swiper__link button">
+              BOOK FREE CONSULTATION
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="more">
+        <div class="container">
+          <h2 class="more__title">
+            more than a kitchen
+          </h2>
+          <div class="more__text">
+            We believe great design is achievable on any budget what sets us apart is the quality of service we deliver
+          </div>
+        </div>
+      </section>
+      <section class="advantage">
+        <h2 class="visually-hidden">advantages</h2>
+        <div class="advantage__perfect perfect">
+          <div class="advantage__image perfect__image">
+            <img src="@img/hero3.jpg" alt="">
+          </div>
+          <div class="container">
+            <a class="advantage__link perfect__link">
+              learn more
+            </a>
+            <h3 class="advantage__title perfect__title">
+              Perfect kitchens for you 
+            </h3>
+            <div class="advantage__text perfect__text">
+              Whatever the size of your space, every one of our kitchen designs is unique, made to suit your home and
+              lifestyle. 
+            </div>
+          </div>
+        </div>
+        <div class="advantage__detail detail">
+          <div class="advantage__image detail__image">
+            <img src="@img/hero3.jpg" alt="">
+          </div>
+          <div class="container">
+            <h3 class="advantage__title detail__title">
+              It’s all in the detail 
+            </h3>
+            <div class="advantage__text detail__text">
+              The finishing touches that add personality to your space 
+            </div>
+            <a class="advantage__link detail__link">
+              Explore our kitchen features
+            </a>
+          </div>
+        </div>
+        <div class="advantage__inspiration inspiration">
+          <div class="advantage__image inspiration__image">
+            <img src="@img/hero3.jpg" alt="">
+          </div>
+          <div class="container">
+            <h3 class="advantage__title inspiration__title">
+              Inspiration at every turn 
+            </h3>
+            <div class="advantage__text inspiration__text">
+              Designed to inspire, our showroom offers you the opportunity to experience the quality of our kitchens in
+              a
+              relaxed atmosphere. 
+            </div>
+            <a class="advantage__link inspiration__link">
+              Visit the showroom
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="stay">
+        <div class="stay__row container">
+          <div class="stay__column">
+            <h2 class="stay__title">
+              Stay in touch
+            </h2>
+            <div class="stay__text">
+              Lorem ipsum dolor sit amet consectetur. Quis at quis eget nunc. Tempor vestibulum leo metus et leo et.
+              Nullam bibendum aliquet velit magnis at. Aliquam dignissim ut massa adipiscing blandit porttitor pretium
+              lorem.
+            </div>
+          </div>
+          <form class="stay__form">
+            <input type="text" class="stay__input" placeholder="Name">
+            <input type="text" class="stay__input" placeholder="Email">
+            <input type="text" class="stay__input" placeholder="Telephone">
+            <textarea type="text" class="stay__input" placeholder="Message"></textarea>
+            <button type="submit" class="stay__submit button">
+              SEND
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="trustpilot">
+        ###############################
+      </section>
+      <section class="about">
+        <div class="container">
+          <div class="about__row">
+            <div class="about__body">
+              <h2 class="about__title">
+                About Urban Myth
+              </h2>
+              <ul class="about__list">
+                <li class="about__item">
+                  Full design and consultation service
+                </li>
+                <li class="about__item">
+                  UK manufactured kitchens and bedrooms
+                </li>
+                <li class="about__item">
+                  The latest appliances and brands
+                </li>
+                <li class="about__item">
+                  Dedicated customer service
+                </li>
+              </ul>
+              <a class="about__link button">
+                WHY CHOOSE URBAN MYTH
+              </a>
+            </div>
+            <div class="about__image">
+              <img src="@img/hero3.jpg" alt="">
+              <div class="about__pag">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__body">
+            <h2 class="blog__title">
+              Urban Blog
+            </h2>
+            <div class="blog__subtitle">
+              Keep ahead of the trends and latest designs in kitchens
+            </div>
+            <ul class="blog__list">
+              <li class="blog__item">
+                <div class="blog__image">
+                  <img src="@img/hero3.jpg" alt="">
+                </div>
+                <a href="#" class="blog__link">
+                  Snappy title from blog
+                </a>
+              </li>
+              <li class="blog__item">
+                <div class="blog__image">
+                  <img src="@img/hero3.jpg" alt="">
+                </div>
+                <a href="#" class="blog__link">
+                  Snappy title from blog
+                </a>
+              </li>
+              <li class="blog__item">
+                <div class="blog__image">
+                  <img src="@img/hero3.jpg" alt="">
+                </div>
+                <a href="#" class="blog__link">
+                  Snappy title from blog
+                </a>
+              </li>
+              <li class="blog__item">
+                <div class="blog__image">
+                  <img src="@img/hero3.jpg" alt="">
+                </div>
+                <a href="#" class="blog__link">
+                  Snappy title from blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__column">
+            <div class="footer__logo">
+              <img src="#" alt="">
+            </div>
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a href="#">
+                  <img src="" alt="">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <img src="#" alt="">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <img src="#" alt="">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <img src="#" alt="">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#">
+                  <img src="#" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <a class="footer__link">
+              BOOK CONSULTATION
+            </a>
+            <div class="footer__tel">
+              020 8531 3413
+            </div>
+            <div class="footer__address">
+              Urban Myth <br> 7 Cabinet Way <br> London <br> E4 8QF
+            </div>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">
+              Products
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                Shaker Kitchens
+              </li>
+              <li class="footer__item">
+                Handleless Kitchens
+              </li>
+              <li class="footer__item">
+                Pedini Kitchens
+              </li>
+              <li class="footer__item">
+                Fitted Bedrooms
+              </li>
+            </ul>
+            <h3 class="footer__title">
+              Service
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                Consultancy
+              </li>
+              <li class="footer__item">
+                Design
+              </li>
+              <li class="footer__item">
+                Installation
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">
+              Developers
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                Projects
+              </li>
+              <li class="footer__item">
+                Service
+              </li>
+              <li class="footer__item">
+                Sustainability
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">
+              About Us
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                Our Story
+              </li>
+              <li class="footer__item">
+                Our Team
+              </li>
+              <li class="footer__item">
+                Our Process
+              </li>
+            </ul>
+            <h3 class="footer__title">
+              Resources
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                Kitchen Brochure
+              </li>
+              <li class="footer__item">
+                Customer Manuals
+              </li>
+              <li class="footer__item">
+                Privacy
+              </li>
+              <li class="footer__item">
+                Terms of service
+              </li>
+              <li class="footer__item">
+                Modern Slavery
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script defer src="/js/homepage.min.js?v=20220908"></script>
+</body>
+
 </html>
