@@ -13,6 +13,7 @@ let fileinclude = require("gulp-file-include");
 let clean_css = require("gulp-clean-css");
 let newer = require("gulp-newer");
 let webp = require("imagemin-webp");
+let notify = require("gulp-notify");
 
 let browsersync = require("browser-sync").create();
 
@@ -29,7 +30,7 @@ let path = {
     videos: project_name + "/video/",
   },
   src: {
-    html: [src_folder + "/**/*.html", "!" + src_folder + "/_*.html"],
+    html: [src_folder + "/**/*.html", "!" + src_folder + "/**/_*.html"],
     js: src_folder + "/js/*.js",
     css: src_folder + "/scss/*.scss",
     images: src_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
@@ -55,15 +56,17 @@ function browserSync(done) {
 }
 function html() {
   return src(path.src.html, {})
-    .pipe(plumber())
+  .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(fileinclude())
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream());
+    
 }
 function css() {
   return (
     src(path.src.css, {})
-      .pipe(plumber())
+      // .pipe(plumber())
+      .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
       .pipe(
         scss({
           outputStyle: "expanded",
@@ -85,6 +88,7 @@ function css() {
         })
       )
       .pipe(dest(path.build.css))
+      // .pipe(notify())
   );
 }
 

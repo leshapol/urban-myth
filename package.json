@@ -20,7 +20,8 @@
     "gulp-rename": "latest",
     "gulp-sass": "latest",
     "gulp-uglify-es": "latest",
-    "webp-converter": "2.2.3"
+    "webp-converter": "2.2.3",
+    "gulp-notify": "^4.0.0"
   },
   "dependencies": {
     "sass": "^1.35.2"
