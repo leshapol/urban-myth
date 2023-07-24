@@ -1,0 +1,96 @@
+.header {
+  &__column {
+  }
+
+  &__head {
+    background-color: black;
+    font-size: 14px;
+    letter-spacing: 1.96px;
+  }
+  &__wrap {
+    display: flex;
+    min-height: 65px;
+    align-items: center;
+  }
+  &__wrap > *:not(:last-child) {
+    margin-right: 18px;
+  }
+  &__head a,
+  &__head {
+    color: #fff;
+  }
+
+  &__tel a {
+    padding-left: 24px;
+    position: relative;
+  }
+  &__tel a:before {
+    content: "";
+    background: url("/img/tel.svg") center / contain no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+  }
+
+  &__broshure a {
+    padding-left: 24px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  &__broshure a:before {
+    content: "";
+    background: url("/img/libr.svg") center / contain no-repeat;
+    position: absolute;
+
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+  }
+
+  &__slogan {
+    margin-left: AUTO;
+    text-transform: uppercase;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list a {
+    color: black;
+    letter-spacing: 2.32px;
+    font-size: 16px;
+  }
+
+  &__item {
+  }
+  &__item {
+    margin-right: 30px;
+  }
+
+  &__link {
+  }
+
+  &__btn {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+}
