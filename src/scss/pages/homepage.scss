@@ -11,17 +11,6 @@ body {
 
 /*common
 *********************************************/
-
-// section {
-//   @include adaptiv-value("padding-top", 60, 40, 1);
-//   @include adaptiv-value("padding-bottom", 60, 40, 1);
-// }
-
-// blocks ***********************************//
-@import "blocks/button";
-@import "blocks/circle_button";
-/*********************************************/
-
 /************************************************Homepage****/
 /*==================header=============*/
 @import "blocks/header";
@@ -43,3 +32,5 @@ body {
 @import "blocks/blog";
 /*==================footer=============*/
 @import "blocks/footer";
+
+/************************************************Gallary****/

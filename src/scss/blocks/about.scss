@@ -59,10 +59,16 @@
     padding-left: 63px;
     padding-right: 63px;
   }
+  &__figure {
+    flex: 0 0 458px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
   &__image {
     position: relative;
-    flex: 0 0 458px;
-    padding-bottom: 39%;
+    height: auto;
+    flex: 0 0 438px;
   }
   &__image img {
     position: absolute;
@@ -76,5 +82,25 @@
   }
 
   &__pag {
+    display: flex;
+    width: 72px;
+    gap: 15px;
+    align-self: center;
+  }
+}
+.pag {
+  display: flex;
+  width: 72px;
+  gap: 15px;
+  &__item {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+  }
+  &__item--active {
+    background-color: black;
   }
 }

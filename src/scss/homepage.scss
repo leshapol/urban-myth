@@ -1,5 +1,15 @@
+// common ***********************************//
 @import "common/global-variable";
 @import "common/mixins";
 @import "common/null";
-@import "pages/homepage";
 @import "common/fonts";
+/**********************/
+
+// blocks ***********************************//
+@import "blocks/button";
+@import "blocks/circle_button";
+/*********************************************/
+
+// pages ***********************************//
+@import "pages/homepage";
+/*********************************************/

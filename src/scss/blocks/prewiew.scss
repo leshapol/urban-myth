@@ -6,6 +6,19 @@
     padding: 0 20px;
     box-sizing: border-box;
   }
+
+  &__wrap:before {
+    content: " ";
+    position: absolute;
+    background-color: #ebdbdb;
+    height: 528px;
+    width: 150vh;
+    left: 50%;
+    bottom: -120px;
+    z-index: -5;
+    border-radius: 0px 0px 0px 300px;
+    opacity: 1;
+  }
   &__image img {
     position: absolute;
     top: 0;

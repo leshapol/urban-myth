@@ -29,14 +29,13 @@
   }
 
   &__item {
-    flex: 0 0 353px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 65px;
   }
 
   &__image {
@@ -63,5 +62,16 @@
     font-weight: 300;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 13px;
+  }
+  &__link:before {
+    display: block;
+    content: "";
+    background: url("/img/footer.svg") center no-repeat;
+    width: 10px;
+    height: 10px;
   }
 }
