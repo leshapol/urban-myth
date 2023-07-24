@@ -9,4 +9,16 @@
   display: inline-block;
   font-weight: 400;
   align-items: center;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.button--long {
+  padding-left: 63px;
+  padding-right: 63px;
+}
+
+.button--footer {
+  color: black;
+  background-color: white;
 }

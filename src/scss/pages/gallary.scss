@@ -1,0 +1,20 @@
+body {
+  color: $text-color;
+  background-color: #ffffff;
+  font-size: 20px;
+  overflow-x: hidden;
+
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+/*common
+*********************************************/
+/************************************************Gallary****/
+/*==================header=============*/
+@import "blocks/header";
+/*==================preview============*/
+
+/*==================footer=============*/
+@import "blocks/footer";
