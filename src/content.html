@@ -1,227 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  @@include('html/_head.html', {"title": "Content", "css": "conten"})
 
-@@include('html/_head.html', {"title": "Content"})
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.html')
 
-
-<body>
-  <div class="wrapper">
-    @@include('html/_header.html')
-
-    <main>
-      <!-- <h1 class="visually-hidden">
+      <main>
+        <!-- <h1 class="visually-hidden">
         h1 title for seo
       </h1> -->
 
-      <section class="article">
-        <div class="article__header container">
-          <h1 class="article__title">
-            KITCHENS
+        <article class="article">
+          <div class="article__top-block container">
+            <div class="article__header">
+              <p class="article__category">KITCHENS</p>
+              <ul class="article__tags tags">
+                <li class="tags__item">tag</li>
+                <li class="tags__item">tag</li>
+                <li class="tags__item">tag</li>
+              </ul>
+            </div>
+            <h1 class="article__title">Graphite and Halifax Pewter Oak</h1>
+            <p class="article__desc">
+              A statement five bedroom detached bungalow fitted with our bespoke
+              Urban Life kitchen furniture and the latest appliances from Miele,
+              Bora and Quooker.
+            </p>
+          </div>
 
-          </h1>
-          <ul class="article__tags tags">
-            <li class="article__tag tag">
-              tag
-            </li>
-            <li class="article__tag tag">
-              tag
-            </li>
-            <li class="article__tag tag">
-              tag
-            </li>
-
-          </ul>
-        </div>
-        <div class="article__body container">
-          <h2 class="article__subtitle">
-            Graphite and Halifax Pewter Oak
-          </h2>
-          <p class="article__desc">
-            A statement five bedroom detached bungalow fitted with our bespoke Urban Life kitchen furniture and the
-            latest appliances from Miele, Bora and Quooker.
-          </p>
           <div class="article__image">
-            <img src="img/hero3.jpg" alt="">
+            <img src="img/hero3.jpg" alt="" />
           </div>
-          <div class="article__text">
-            This exceptional contemporary home has been converted from a former coachworks into a stunning 5 bedroom
-            dwelling with landscaped garden and bespoke fitted kitchen from our Urban Life range.
+
+          <div class="article__text-block container">
+            <p class="article__p">
+              This exceptional contemporary home has been converted from a
+              former coachworks into a stunning 5 bedroom dwelling with
+              landscaped garden and bespoke fitted kitchen from our Urban Life
+              range.
+            </p>
+            <h2 class="article__caption">
+              FITTED WITH THE LATEST IN APPLIANCE TECHNOLOGY
+            </h2>
+            <p class="article__p">
+              The finish complements the decor of the building perfectly with
+              our handleless Graphite tall units and Halifax Pewter Oak base
+              units. A lovely additional feature is the open shelving at one
+              end, a place for the homeowner to inject their own personality and
+              show off their favourite objects.
+            </p>
           </div>
-          <div class="article__caption">
-            FITTED WITH THE LATEST IN APPLIANCE TECHNOLOGY
-          </div>
-          <div class="article__text">
-            The finish complements the decor of the building perfectly with our handleless Graphite tall units and
-            Halifax Pewter Oak base units. A lovely additional feature is the open shelving at one end, a place for the
-            homeowner to inject their own personality and show off their favourite objects.
-          </div>
-        </div>
-        <div class="article__slider slider">
-          <div class="slider__body container">
-            <div class="slider__desc">
-              click to enlarge
+
+          <div class="article__slider slider">
+            <div class="slider__body container">
+              <div class="slider__desc">click to enlarge</div>
+              <ul class="slider__list">
+                <li class="slider__item">
+                  <div class="slider__image">
+                    <img src="/img/hero3.jpg" alt="" />
+                    <div class="slider__arrow"></div>
+                    <div class="slider__arrow"></div>
+                  </div>
+                  <div class="slider__footer">
+                    <div class="slider__title"></div>
+                    <button class="slider__button"></button>
+                  </div>
+                </li>
+                <li class="slider__item">
+                  <div class="slider__image">
+                    <img src="/img/hero3.jpg" alt="" />
+                    <div class="slider__arrow"></div>
+                    <div class="slider__arrow"></div>
+                  </div>
+                  <div class="slider__footer">
+                    <div class="slider__title"></div>
+                    <button class="slider__button"></button>
+                  </div>
+                </li>
+                <li class="slider__item">
+                  <div class="slider__image">
+                    <img src="/img/hero3.jpg" alt="" />
+                    <div class="slider__arrow"></div>
+                    <div class="slider__arrow"></div>
+                  </div>
+                  <div class="slider__footer">
+                    <div class="slider__title"></div>
+                    <button class="slider__button"></button>
+                  </div>
+                </li>
+                <li class="slider__item">
+                  <div class="slider__image">
+                    <img src="/img/hero3.jpg" alt="" />
+                    <div class="slider__arrow"></div>
+                    <div class="slider__arrow"></div>
+                  </div>
+                  <div class="slider__footer">
+                    <div class="slider__title"></div>
+                    <button class="slider__button"></button>
+                  </div>
+                </li>
+                <li class="slider__item">
+                  <div class="slider__image">
+                    <img src="/img/hero3.jpg" alt="" />
+                    <div class="slider__arrow"></div>
+                    <div class="slider__arrow"></div>
+                  </div>
+                  <div class="slider__footer">
+                    <div class="slider__title"></div>
+                    <button class="slider__button"></button>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <ul class="slider__list">
-              <li class="slider__item">
-                <div class="slider__image">
-                  <img src="/img/hero3.jpg" alt="">
-                  <div class="slider__arrow ">
-
-                  </div>
-                  <div class="slider__arrow">
-
-                  </div>
-                </div>
-                <div class="slider__footer">
-                  <div class="slider__title">
-
-                  </div>
-                  <button class="slider__button">
-
-                  </button>
-                </div>
-              </li>
-              <li class="slider__item">
-                <div class="slider__image">
-                  <img src="/img/hero3.jpg" alt="">
-                  <div class="slider__arrow ">
-
-                  </div>
-                  <div class="slider__arrow">
-
-                  </div>
-                </div>
-                <div class="slider__footer">
-                  <div class="slider__title">
-
-                  </div>
-                  <button class="slider__button">
-
-                  </button>
-                </div>
-              </li>
-              <li class="slider__item">
-                <div class="slider__image">
-                  <img src="/img/hero3.jpg" alt="">
-                  <div class="slider__arrow ">
-
-                  </div>
-                  <div class="slider__arrow">
-
-                  </div>
-                </div>
-                <div class="slider__footer">
-                  <div class="slider__title">
-
-                  </div>
-                  <button class="slider__button">
-
-                  </button>
-                </div>
-              </li>
-              <li class="slider__item">
-                <div class="slider__image">
-                  <img src="/img/hero3.jpg" alt="">
-                  <div class="slider__arrow ">
-
-                  </div>
-                  <div class="slider__arrow">
-
-                  </div>
-                </div>
-                <div class="slider__footer">
-                  <div class="slider__title">
-
-                  </div>
-                  <button class="slider__button">
-
-                  </button>
-                </div>
-              </li>
-              <li class="slider__item">
-                <div class="slider__image">
-                  <img src="/img/hero3.jpg" alt="">
-                  <div class="slider__arrow ">
-
-                  </div>
-                  <div class="slider__arrow">
-
-                  </div>
-                </div>
-                <div class="slider__footer">
-                  <div class="slider__title">
-
-                  </div>
-                  <button class="slider__button">
-
-                  </button>
-                </div>
-              </li>
-            </ul>
           </div>
 
-        </div>
-        <div class="article__body container">
-          <div class="article__text">
-            The island is a real focal point with this layered effect of two Quartz stone worktops, there is space for
-            the whole family to dine or entertain.
-            <br>
-            We have also added the latest appliances from Miele, a single oven, combi microwave and warming drawer. As
-            well as a Quooker tap in matt black and the Bora Pure downdraft extracting induction hob. No detail has
-            been left out as we also completed the utility toom in the same style ensuring that this kitchen looks
-            great from every angle!
-          </div>
-          <div class="article__details">
-            <div class="article__details-title">
-              Details:
+          <div class="article__text-block container">
+            <p class="article__p">
+              The island is a real focal point with this layered effect of two
+              Quartz stone worktops, there is space for the whole family to dine
+              or entertain.
+            </p>
+            <p class="article__p">
+              We have also added the latest appliances from Miele, a single
+              oven, combi microwave and warming drawer. As well as a Quooker tap
+              in matt black and the Bora Pure downdraft extracting induction
+              hob. No detail has been left out as we also completed the utility
+              toom in the same style ensuring that this kitchen looks great from
+              every angle!
+            </p>
+
+            <div class="article__details">
+              <div class="article__details-title">Details:</div>
+              <dl class="article__details-list">
+                <div class="article__details-wrap">
+                  <dt class="article__details-subtitle">Kitchen:</dt>
+                  <dd class="article__details-desc">Urban Life</dd>
+                </div>
+                <div class="article__details-wrap">
+                  <dt class="article__details-subtitle">Finish:</dt>
+                  <dd class="article__details-desc">
+                    Corian White Splash back and worktop
+                  </dd>
+                </div>
+                <div class="article__details-wrap">
+                  <dt class="article__details-subtitle">Fittings:</dt>
+                  <dd class="article__details-desc">
+                    Blum Handles and Fankle Basin
+                  </dd>
+                </div>
+                <div class="article__details-wrap">
+                  <dt class="article__details-subtitle">Appliances:</dt>
+                  <dd class="article__details-desc">
+                    Smeg Oven and hob, Quooker Tap
+                  </dd>
+                </div>
+              </dl>
             </div>
-            <dl class="article__details-list">
-              <div class="article__details-wrap">
-                <dt class="article__details-subtitle">
-                  Kitchen:
-                </dt>
-                <dd class="article__details-desc">
-                  Urban Life
-                </dd>
-              </div>
-              <div class="article__details-wrap">
-                <dt class="article__details-subtitle">
-                  Finish:
-                </dt>
-                <dd class="article__details-desc">
-                  Corian White Splash back and worktop
-                </dd>
-              </div>
-              <div class="article__details-wrap">
-                <dt class="article__details-subtitle">
-                  Fittings:
-                </dt>
-                <dd class="article__details-desc">
-                  Blum Handles and Fankle Basin
-                </dd>
-              </div>
-              <div class="article__details-wrap">
-                <dt class="article__details-subtitle">
-                  Appliances:
-                </dt>
-                <dd class="article__details-desc">
-                  Smeg Oven and hob, Quooker Tap
-                </dd>
-              </div>
-            </dl>
+            <a href="#" class="article__share">Share</a>
           </div>
-          <a href="#" class="article__link">
-            SHARE
-          </a>
-        </div>
-      </section>
-      @@include('html/_blog.html')
-    </main>
-    @@include('html/_footer.html')
-  </div>
+        </article>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="/js/homepage.min.js?v=20220908"></script>
-</body>
+        @@include('html/_blog.html')
+      </main>
+      @@include('html/_footer.html')
+    </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="/js/homepage.min.js?v=20220908"></script>
+  </body>
 </html>
