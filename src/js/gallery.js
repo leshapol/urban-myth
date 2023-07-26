@@ -1,4 +1,4 @@
 @@include('./libs/lazysizes.min.js', {})
 
 
-@@include('pages/homepage.js', {})
+@@include('pages/gallery.js', {})

@@ -37,6 +37,15 @@ body {
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+
+	color: $text-color;
+	background-color: $body-bgcolor;
+	font-size: 20px;
+	overflow-x: hidden;
+
+	&._lock {
+		overflow: hidden;
+	}
 }
 input,
 button,
