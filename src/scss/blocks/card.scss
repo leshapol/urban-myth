@@ -13,6 +13,10 @@
     object-fit: cover;
   }
 
+  &__image_long img {
+    height: 500px;
+  }
+
   &__body {
     display: grid;
     grid-template-columns: auto 1fr;
