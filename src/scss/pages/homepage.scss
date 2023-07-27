@@ -3,6 +3,9 @@
 /*==================preview============*/
 .prewiew {
   margin-bottom: 55px;
+  @media (max-width: $md3) {
+    margin-top: 20px;
+  }
   &__wrap {
     position: relative;
     height: 706px;
@@ -21,6 +24,9 @@
     z-index: -5;
     border-radius: 0px 0px 0px 300px;
     opacity: 1;
+    @media (max-width: $md3) {
+      bottom: -300px;
+    }
   }
   &__image img {
     position: absolute;
@@ -32,6 +38,9 @@
     z-index: 0;
     object-fit: cover;
     padding: 0 20px;
+    @media (max-width: $md3) {
+      padding: 0 10px;
+    }
   }
 
   &__body {
@@ -40,6 +49,11 @@
     max-width: 645px;
     padding-top: 500px;
     padding-left: 53px;
+    @media (max-width: $md3) {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   &__text {
@@ -62,11 +76,24 @@
     z-index: 0;
     object-fit: cover;
     padding: 0 20px;
+    @media (max-width: $md3) {
+      position: relative;
+      display: block;
+      padding: 0;
+    }
   }
 
   &__wrap {
     position: relative;
     height: 706px;
+    @media (max-width: $md3) {
+      height: auto;
+    }
+  }
+  &__wrap.container {
+    @media (max-width: $md3) {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -80,6 +107,10 @@
     max-width: 500px;
     padding-top: 96px;
     padding-left: 53px;
+    @media (max-width: $md3) {
+      margin: 0 auto;
+      margin-bottom: 100px;
+    }
   }
   &__body > *:not(:last-child) {
     margin-bottom: 30px;
@@ -91,9 +122,21 @@
     margin-bottom: 25px;
     font-size: 20px;
   }
+  &__link {
+    @media (max-width: $md5) {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 14px;
+    }
+  }
 }
 /*========================More=========*/
 .more {
+  .container {
+    @media (max-width: $md4) {
+      padding: 0;
+    }
+  }
   margin-bottom: 50px;
   &__title {
     text-align: center;
@@ -121,6 +164,10 @@
     border-radius: 0px 0px 100px 100px;
     padding-top: 100px;
     padding-bottom: 90px;
+
+    @media (max-width: $md3) {
+      padding-top: 30px;
+    }
   }
 }
 /*====================advantage========*/
@@ -129,11 +176,17 @@
   &__wrapper {
     position: relative;
     min-height: 748px;
+    @media (max-width: $md3) {
+      min-height: auto;
+    }
   }
 
   &__wrapper .container {
     position: relative;
     height: 748px;
+    @media (max-width: $md3) {
+      height: auto;
+    }
   }
 
   &__wrapper:not(:last-child) {
@@ -148,28 +201,68 @@
     height: 100%;
     z-index: 0;
     object-fit: cover;
+    @media (max-width: $md3) {
+      position: relative;
+      height: 400px;
+    }
   }
 
   &__link {
     position: absolute;
     z-index: 5;
+    @media (max-width: $md3) {
+      display: none;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    width: 310px;
+    text-align: center;
+    margin-bottom: 70px;
+    @media (min-width: $md3) {
+      display: none;
+    }
   }
 
   &__body {
     position: relative;
     z-index: 5;
     max-width: 600px;
+    @media (max-width: $md3) {
+      padding: 0;
+    }
   }
 
   &__title {
     font-size: 36px;
     margin-bottom: 15px;
     font-weight: 400;
+    @media (max-width: $md3) {
+      display: none;
+    }
   }
-
+  &__title_mobile {
+    display: none;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    @media (max-width: $md3) {
+      display: block;
+    }
+    @media (max-width: $md5) {
+      text-align: left;
+    }
+  }
+  &__title_mobile {
+  }
   &__text {
     font-size: 20px;
     font-weight: 400;
+    @media (max-width: $md3) {
+      margin-top: 20px;
+    }
   }
 }
 .perfect {
@@ -198,6 +291,10 @@
   &__body {
     margin-left: 154px;
     padding-top: 590px;
+    @media (max-width: $md5) {
+      margin: 0;
+      padding: 0;
+    }
   }
   &__image img {
     border-radius: 200px 0px 0px 0px;
@@ -220,15 +317,23 @@
   &__body {
     margin-left: 154px;
     padding-top: 135px;
+    @media (max-width: $md3) {
+      padding: 0;
+      margin: 0;
+    }
   }
   &__image img {
     border-radius: 0px 0px 200px 0px;
   }
 
   &__title {
+    color: #f5f5f5;
   }
 
   &__text {
+    color: #f5f5f5;
+    font-size: 20px;
+    font-weight: 300;
   }
 
   &__link {
@@ -238,6 +343,11 @@
 }
 /*========================stay=========*/
 .stay {
+  .container {
+    @media (max-width: $md5) {
+      padding: 0;
+    }
+  }
   &__row {
     display: flex;
     max-width: 1216px;
@@ -249,11 +359,20 @@
     padding-bottom: 58px;
     position: relative;
     z-index: 1;
+    @media (max-width: $md3) {
+      flex-direction: column;
+      padding: 0 10px;
+      padding-top: 40px;
+      border-radius: 40px;
+    }
   }
 
   &__column {
     flex: 0 0 310px;
     margin-right: 56px;
+    @media (max-width: $md3) {
+      flex: 0 0 auto;
+    }
   }
 
   &__title {
@@ -286,6 +405,9 @@
     z-index: -5;
     border-radius: 150px 0px 0px 150px;
     opacity: 0.6;
+    @media (max-width: $md3) {
+      display: none;
+    }
   }
 
   &__input {
@@ -303,6 +425,14 @@
   }
   &__submit {
     margin-left: auto;
+    @media (max-width: $md3) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    @media (max-width: $md4) {
+      margin: 0;
+      align-self: center;
+    }
   }
 }
 /*========================trustpilot===*/
@@ -319,10 +449,22 @@
     max-width: 1200px;
     justify-content: space-between;
     margin: 0 auto;
+    @media (max-width: $md3) {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  &__link {
+    @media (max-width: $md5) {
+      padding: 15px 25px;
+    }
   }
 
   &__body {
     flex: 1 0 515px;
+    @media (max-width: $md3) {
+      flex: 0 0 auto;
+    }
   }
 
   &__title {

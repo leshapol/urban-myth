@@ -3,6 +3,9 @@
   padding-top: 112px;
   background-color: #f3f1d5;
   border-radius: 350px 350px 0px 0px;
+  @media (max-width: $md4) {
+    padding-top: 200px;
+  }
   &__body {
   }
 
@@ -20,6 +23,7 @@
     font-size: 36px;
     font-weight: 400;
     margin-bottom: 107px;
+    padding: 0px 20px;
   }
 
   &__list {
