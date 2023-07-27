@@ -1,6 +1,7 @@
 .story {
   &__header {
     margin-bottom: 100px;
+    margin-top: 50px;
   }
 
   &__start {
@@ -49,6 +50,9 @@
     font-size: 18px;
     font-weight: 400;
   }
+  &__text p:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .company {
   height: 705px;
@@ -84,6 +88,9 @@
   &__text {
     font-size: 18px;
   }
+  &__text p:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 .directors {
   &__title {
@@ -104,7 +111,6 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr;
     gap: 30px 35px;
-    grid-auto-flow: dense;
   }
 
   &__item {
@@ -145,7 +151,7 @@
   }
 
   &__desc {
-    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 18px;
   }
 }
