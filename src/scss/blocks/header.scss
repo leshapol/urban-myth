@@ -1,6 +1,15 @@
 .header {
   &__column {
   }
+  & .container {
+    max-width: 2436px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (max-width: $md3) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
 
   &__head {
     background-color: black;
@@ -203,10 +212,10 @@
   }
   &__burger_active span:nth-child(2) {
     transform: rotate(45deg) translate(0px, 5px);
-    width: 30px;
+    //width: 30px;
   }
   &__burger_active span:nth-child(3) {
     transform: rotate(-45deg) translate(0px, -5px);
-    width: 30px;
+    // width: 30px;
   }
 }
