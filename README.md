@@ -5,7 +5,7 @@
 
 ```bash
 npm i
-gulp buid
+gulp build
 ```
 
 3. You get ready project in build folder
