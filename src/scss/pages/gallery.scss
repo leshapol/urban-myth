@@ -80,6 +80,31 @@
     display: block;
     margin-bottom: 100px;
   }
+
+  &__modal-open {
+    margin-bottom: 70px;
+    display: none;
+    max-width: 160px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 50px;
+
+    @media (max-width: $md3) {
+      display: block;
+    }
+  }
+  &__modal-open span {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.96px;
+    padding: 0;
+    width: auto;
+    margin: 5px 0;
+  }
 }
 
 .catalog-list {

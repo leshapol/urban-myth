@@ -6,7 +6,7 @@ for (let heade of header) {
   };
 }
 //-----------------------------//
-let open = document.querySelector(".filters__modal-open");
+let open = document.querySelector(".catalog__modal-open");
 let close = document.querySelector(".filters__close");
 let filters = document.querySelector(".filters");
 

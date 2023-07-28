@@ -88,6 +88,14 @@
     display: grid;
     grid-template-columns: repeat(3, 463px);
     gap: 30px;
+    justify-content: center;
+    @media (max-width: $md1) {
+      grid-template-columns: 463px 463px;
+      column-gap: 70px;
+    }
+    @media (max-width: $md3) {
+      grid-template-columns: minmax(auto, 550px);
+    }
   }
 
   &__button {
@@ -97,7 +105,7 @@
   &__button-wrap {
     display: flex;
     justify-content: center;
-    grid-row: 3/4;
+    grid-row: -1/-2;
     grid-column: 1/4;
     margin: 50px 0px;
   }
