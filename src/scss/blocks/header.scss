@@ -36,9 +36,6 @@
     color: #fff;
   }
 
-  &__tel {
-  }
-
   &__tel a {
     padding-left: 24px;
     position: relative;
@@ -50,7 +47,7 @@
   }
   &__tel a:before {
     content: "";
-    background: url("/img/tel.svg") center / contain no-repeat;
+    background: url("/img/icons/tel.svg") center / contain no-repeat;
     position: absolute;
     width: 16px;
     height: 16px;
@@ -74,7 +71,7 @@
   }
   &__broshure a:before {
     content: "";
-    background: url("/img/libr.svg") center / contain no-repeat;
+    background: url("/img/icons/libr.svg") center / contain no-repeat;
     position: absolute;
 
     width: 16px;
@@ -109,9 +106,6 @@
       padding-top: 15px;
       padding-bottom: 25px;
     }
-  }
-
-  &__logo {
   }
 
   &__nav {
@@ -167,8 +161,6 @@
   }
 
   &__item {
-  }
-  &__item {
     margin-right: 30px;
     @media (max-width: $md2) {
       margin-right: 20px;
@@ -178,8 +170,6 @@
     }
   }
 
-  &__link {
-  }
   &__btn {
     max-width: 300px;
     align-items: flex-start;
@@ -195,6 +185,7 @@
       display: block;
     }
   }
+
   &__burger span {
     width: 100%;
     height: 2px;

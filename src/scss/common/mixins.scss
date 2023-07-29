@@ -51,3 +51,9 @@
   font-family: $titleFont;
   font-weight: 700;
 }
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
