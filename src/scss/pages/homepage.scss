@@ -68,6 +68,10 @@
 }
 /*=====================Swiper==========*/
 .swiper {
+  & .container {
+    max-width: none;
+    padding: 0;
+  }
   &__img {
     position: absolute;
     top: 0;
@@ -80,7 +84,7 @@
     background-image: url("../img/hero-img.jpg");
   }
   &__foreground-img {
-    background-image: url("../img/hero-img-gray.jpg");
+    background-image: url("../img/bed-fun-3.jpg");
     width: 50%;
   }
 
@@ -98,20 +102,20 @@
     &:hover {
       background: rgba(#f2f2f2, 0.1);
     }
-    &::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 6px;
-      height: 600px;
-      background: white;
-      cursor: pointer;
-    }
-    &::-moz-range-thumb {
-      width: 6px;
-      height: 600px;
-      background: white;
-      cursor: pointer;
-    }
+    // &::-webkit-slider-thumb {
+    //   -webkit-appearance: none;
+    //   appearance: none;
+    //   width: 6px;
+    //   height: 706px;
+    //   background: white;
+    //   cursor: pointer;
+    // }
+    // &::-moz-range-thumb {
+    //   width: 6px;
+    //   height: 706px;
+    //   background: white;
+    //   cursor: pointer;
+    // }
   }
 
   &__slider-button {
@@ -122,7 +126,7 @@
     height: $size;
     border-radius: 50%;
     background-color: white;
-    left: calc(50% - 18px);
+    left: calc(50% - 15px);
     top: calc(50% - 18px);
     @include center;
 
