@@ -613,8 +613,9 @@
     border-radius: 50%;
     display: block;
     cursor: pointer;
+    transition: 0.3s;
   }
-  &__item--active {
+  &__item_active {
     background-color: black;
   }
 }

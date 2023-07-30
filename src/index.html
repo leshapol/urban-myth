@@ -1,71 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.html', {"title": "homepage", "css": "homepage"})
+@@include('html/_head.html', {"title": "homepage", "css": "homepage"})
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.html')
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html')
 
-      <main>
-        <h1 class="visually-hidden">h1 title for seo</h1>
-        <section class="prewiew">
-          <div class="prewiew__wrap">
-            <h2 class="visually-hidden">opening slogan</h2>
-            <div class="prewiew__image">
-              <picture>
-                <source
-                  type="image/webp"
-                  media="(min-width: 470px)"
-                  srcset="/img/hero-img.webp 1x, /img/hero-img@2x.webp 2x"
-                  width="1920"
-                  height="720"
-                />
-                <source
-                  type="image/webp"
-                  srcset="
+    <main>
+      <h1 class="visually-hidden">h1 title for seo</h1>
+      <section class="prewiew">
+        <div class="prewiew__wrap">
+          <h2 class="visually-hidden">opening slogan</h2>
+          <div class="prewiew__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 470px)"
+                srcset="/img/hero-img.webp 1x, /img/hero-img@2x.webp 2x" width="1920" height="720" />
+              <source type="image/webp" srcset="
                     /img/hero-img-mobile.webp    1x,
                     /img/hero-img-mobile@2x.webp 2x
-                  "
-                  width="480"
-                  height="720"
-                />
-                <source
-                  media="(min-width: 470px)"
-                  srcset="/img/hero-img.jpg 1x, /img/hero-img@2x.jpg 2x"
-                  width="1920"
-                  height="720"
-                />
-                <img
-                  src="/img/hero-img-mobile.jpg"
-                  srcset="
+                  " width="480" height="720" />
+              <source media="(min-width: 470px)" srcset="/img/hero-img.jpg 1x, /img/hero-img@2x.jpg 2x" width="1920"
+                height="720" />
+              <img src="/img/hero-img-mobile.jpg" srcset="
                     /img/hero-img-mobile.jpg    1x,
                     /img/hero-img-mobile@2x.jpg 2x
-                  "
-                  alt="Urban myth hero"
-                  width="480"
-                  height="720"
-                />
-              </picture>
-            </div>
-            <div class="container">
-              <div class="prewiew__body">
-                <p class="prewiew__text">
-                  Bespoke kitchens and bedrooms designed just for you. Our
-                  complete service means our experienced team is with you every
-                  step of the way.
-                </p>
-                <a href="#" class="prewiew__link button button--long">
-                  VIEW KITCHEN GALLERY
-                </a>
-              </div>
+                  " alt="Urban myth hero" width="480" height="720" />
+            </picture>
+          </div>
+          <div class="container">
+            <div class="prewiew__body">
+              <p class="prewiew__text">
+                Bespoke kitchens and bedrooms designed just for you. Our
+                complete service means our experienced team is with you every
+                step of the way.
+              </p>
+              <a href="#" class="prewiew__link button button--long">
+                VIEW KITCHEN GALLERY
+              </a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="swiper">
-          <div class="swiper__wrap">
-            <div class="container">
-              <!-- <div class="swiper__body">
+      <section class="swiper">
+        <div class="swiper__wrap">
+          <div class="container">
+            <!-- <div class="swiper__body">
                 <h2 class="swiper__title">
                   Turning ideas into beautiful kitchens
                 </h2>
@@ -77,203 +57,172 @@
                   BOOK FREE CONSULTATION
                 </a>
               </div> -->
-              <div class="swiper__img swiper__background-img"></div>
-              <div class="swiper__img swiper__foreground-img"></div>
-              <input
-                type="range"
-                min="1"
-                max="100"
-                value="50"
-                class="swiper__slider"
-                name="slider"
-                id="slider"
-              />
-              <div class="swiper__slider-button"></div>
-            </div>
+            <div class="swiper__img swiper__background-img"></div>
+            <div class="swiper__img swiper__foreground-img"></div>
+            <input type="range" min="1" max="100" value="50" class="swiper__slider" name="slider" id="slider" />
+            <div class="swiper__slider-button"></div>
           </div>
-        </section>
-        <section class="more">
+        </div>
+      </section>
+      <section class="more">
+        <div class="container">
+          <div class="more__wrap">
+            <h2 class="more__title">more than a kitchen</h2>
+            <p class="more__text">
+              We believe great design is achievable on any budget what sets us
+              apart is the quality of service we deliver
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="advantage">
+        <h2 class="visually-hidden">advantages</h2>
+        <div class="advantage__wrapper perfect">
+          <h3 class="advantage__title advantage__title_mobile perfect__title">
+            Perfect kitchens for you 
+          </h3>
+          <div class="advantage__image perfect__image">
+            <source media="(min-width: 470px)" data-srcset="/img/perfect.jpg 1x, /img/perfect@2x.jpg 2x" srcset="
+                  data:image/gif;base64,R0lGODlhCAADAIAAAP///wAAACH5BAEAAAEALAAAAAAIAAMAAAIEjI+pVwA7
+                  " width="1920" height="720" />
+            <img loading="lazy" class="lazyload"
+              src="data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw=="
+              data-srcset="/img/perfect-mobile.jpg    1x, /img/perfect-mobile@2x.jpg 2x" alt="Perfect kitchens for you"
+              width="480" height="720" />
+            </picture>
+          </div>
           <div class="container">
-            <div class="more__wrap">
-              <h2 class="more__title">more than a kitchen</h2>
-              <p class="more__text">
-                We believe great design is achievable on any budget what sets us
-                apart is the quality of service we deliver
+            <div class="advantage__body perfect__body">
+              <h3 class="advantage__title perfect__title">
+                Perfect kitchens for you 
+              </h3>
+              <p class="advantage__text perfect__text">
+                Whatever the size of your space, every one of our kitchen
+                designs is unique, made to suit your home and lifestyle. 
+              </p>
+            </div>
+            <a href="#" class="advantage__link perfect__link circle-button">
+              learn more
+            </a>
+          </div>
+        </div>
+        <a class="advantage__button button"> BOOK FREE CONSULTATION </a>
+        <div class="advantage__wrapper detail">
+          <h3 class="advantage__title advantage__title_mobile detail__title">
+            It’s all in the detail 
+          </h3>
+          <div class="advantage__image detail__image">
+            <img src="/img/hero3.jpg" alt="" />
+          </div>
+          <div class="container">
+            <a href="#" class="advantage__link detail__link circle-button">
+              Explore <br />
+              our kitchen features
+            </a>
+            <div class="advantage__body detail__body">
+              <h3 class="advantage__title detail__title">
+                It’s all in the detail 
+              </h3>
+              <p class="advantage__text detail__text">
+                The finishing touches that add personality to your space 
               </p>
             </div>
           </div>
-        </section>
-
-        <section class="advantage">
-          <h2 class="visually-hidden">advantages</h2>
-          <div class="advantage__wrapper perfect">
-            <h3 class="advantage__title advantage__title_mobile perfect__title">
-              Perfect kitchens for you 
-            </h3>
-            <div class="advantage__image perfect__image">
-                <source
-                  media="(min-width: 470px)"
-                  data-srcset="/img/perfect.jpg 1x, /img/perfect@2x.jpg 2x"
-                  srcset="
-                  data:image/gif;base64,R0lGODlhCAADAIAAAP///wAAACH5BAEAAAEALAAAAAAIAAMAAAIEjI+pVwA7
-                  "
-                  width="1920"
-                  height="720"
-                />
-                <img
-                  loading="lazy"
-                  class="lazyload"
-                  src="data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw=="
-                  data-srcset="/img/perfect-mobile.jpg    1x, /img/perfect-mobile@2x.jpg 2x"
-                  alt="Perfect kitchens for you"
-                  width="480"
-                  height="720"
-                />
-              </picture>
-            </div>
-            <div class="container">
-              <div class="advantage__body perfect__body">
-                <h3 class="advantage__title perfect__title">
-                  Perfect kitchens for you 
-                </h3>
-                <p class="advantage__text perfect__text">
-                  Whatever the size of your space, every one of our kitchen
-                  designs is unique, made to suit your home and lifestyle. 
-                </p>
-              </div>
-              <a href="#" class="advantage__link perfect__link circle-button">
-                learn more
-              </a>
-            </div>
+        </div>
+        <a class="advantage__button button"> BOOK FREE CONSULTATION </a>
+        <div class="advantage__wrapper inspiration">
+          <h3 class="advantage__title advantage__title_mobile inspiration__title">
+            Inspiration at every turn 
+          </h3>
+          <div class="advantage__image inspiration__image">
+            <img src="/img/insp.jpg" alt="" />
           </div>
-          <a class="advantage__button button"> BOOK FREE CONSULTATION </a>
-          <div class="advantage__wrapper detail">
-            <h3 class="advantage__title advantage__title_mobile detail__title">
-              It’s all in the detail 
-            </h3>
-            <div class="advantage__image detail__image">
-              <img src="/img/hero3.jpg" alt="" />
-            </div>
-            <div class="container">
-              <a href="#" class="advantage__link detail__link circle-button">
-                Explore <br />
-                our kitchen features
-              </a>
-              <div class="advantage__body detail__body">
-                <h3 class="advantage__title detail__title">
-                  It’s all in the detail 
-                </h3>
-                <p class="advantage__text detail__text">
-                  The finishing touches that add personality to your space 
-                </p>
-              </div>
-            </div>
-          </div>
-          <a class="advantage__button button"> BOOK FREE CONSULTATION </a>
-          <div class="advantage__wrapper inspiration">
-            <h3
-              class="advantage__title advantage__title_mobile inspiration__title"
-            >
-              Inspiration at every turn 
-            </h3>
-            <div class="advantage__image inspiration__image">
-              <img src="/img/insp.jpg" alt="" />
-            </div>
-            <div class="container">
-              <div class="advantage__body inspiration__body">
-                <h3 class="advantage__title inspiration__title">
-                  Inspiration at every turn 
-                </h3>
-                <p class="advantage__text inspiration__text">
-                  Designed to inspire, our showroom offers you the opportunity
-                  to experience the quality of our kitchens in a relaxed
-                  atmosphere. 
-                </p>
-              </div>
-              <a
-                href="#"
-                class="advantage__link inspiration__link circle-button"
-              >
-                Visit the showroom
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="stay">
           <div class="container">
-            <div class="stay__row">
-              <div class="stay__column">
-                <h2 class="stay__title">Stay in touch</h2>
-                <p class="stay__text">
-                  Lorem ipsum dolor sit amet consectetur. Quis at quis eget
-                  nunc. Tempor vestibulum leo metus et leo et. Nullam bibendum
-                  aliquet velit magnis at. Aliquam dignissim ut massa adipiscing
-                  blandit porttitor pretium lorem.
-                </p>
-              </div>
-              <form class="stay__form">
-                <input type="text" class="stay__input" placeholder="Name" />
-                <input type="text" class="stay__input" placeholder="Email" />
-                <input
-                  type="text"
-                  class="stay__input"
-                  placeholder="Telephone"
-                />
-                <textarea
-                  type="text"
-                  class="stay__input"
-                  placeholder="Message"
-                ></textarea>
-                <button type="submit" class="stay__submit button">SEND</button>
-              </form>
+            <div class="advantage__body inspiration__body">
+              <h3 class="advantage__title inspiration__title">
+                Inspiration at every turn 
+              </h3>
+              <p class="advantage__text inspiration__text">
+                Designed to inspire, our showroom offers you the opportunity
+                to experience the quality of our kitchens in a relaxed
+                atmosphere. 
+              </p>
             </div>
+            <a href="#" class="advantage__link inspiration__link circle-button">
+              Visit the showroom
+            </a>
           </div>
-        </section>
+        </div>
+      </section>
+      <section class="stay">
+        <div class="container">
+          <div class="stay__row">
+            <div class="stay__column">
+              <h2 class="stay__title">Stay in touch</h2>
+              <p class="stay__text">
+                Lorem ipsum dolor sit amet consectetur. Quis at quis eget
+                nunc. Tempor vestibulum leo metus et leo et. Nullam bibendum
+                aliquet velit magnis at. Aliquam dignissim ut massa adipiscing
+                blandit porttitor pretium lorem.
+              </p>
+            </div>
+            <form class="stay__form">
+              <input type="text" class="stay__input" placeholder="Name" />
+              <input type="text" class="stay__input" placeholder="Email" />
+              <input type="text" class="stay__input" placeholder="Telephone" />
+              <textarea type="text" class="stay__input" placeholder="Message"></textarea>
+              <button type="submit" class="stay__submit button">SEND</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-        <section class="trustpilot">
+      <section class="trustpilot">
+        <div class="container">
+          <h2 class="about__title">What our customer say</h2>
+          <img src="/img/trustpilot.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__row">
           <div class="container">
-            <h2 class="about__title">What our customer say</h2>
-            <img src="/img/trustpilot.jpg" alt="" />
-          </div>
-        </section>
-
-        <section class="about">
-          <div class="about__row">
-            <div class="container">
-              <div class="about__body">
-                <h2 class="about__title">About Urban Myth</h2>
-                <ul class="about__list">
-                  <li class="about__item">
-                    Full design and consultation service
-                  </li>
-                  <li class="about__item">
-                    UK manufactured kitchens and bedrooms
-                  </li>
-                  <li class="about__item">The latest appliances and brands</li>
-                  <li class="about__item">Dedicated customer service</li>
-                </ul>
-                <a class="about__link button button--long">
-                  WHY CHOOSE URBAN MYTH
-                </a>
-              </div>
-            </div>
-            <div class="about__figure">
-              <div class="about__image">
-                <img src="/img/about.jpg" alt="" />
-              </div>
-              <div class="about__pag pag">
-                <span class="pag__item pag__item--active"></span>
-                <span class="pag__item"></span>
-                <span class="pag__item"></span>
-              </div>
+            <div class="about__body">
+              <h2 class="about__title">About Urban Myth</h2>
+              <ul class="about__list">
+                <li class="about__item">
+                  Full design and consultation service
+                </li>
+                <li class="about__item">
+                  UK manufactured kitchens and bedrooms
+                </li>
+                <li class="about__item">The latest appliances and brands</li>
+                <li class="about__item">Dedicated customer service</li>
+              </ul>
+              <a class="about__link button button--long">
+                WHY CHOOSE URBAN MYTH
+              </a>
             </div>
           </div>
-        </section>
-        @@include('html/_blog.html')
-      </main>
-      @@include('html/_footer.html')
-    </div>
+          <div class="about__figure">
+            <div class="about__image">
+              <img src="/img/about.jpg" alt="" />
+            </div>
+            <div class="about__pag pag">
+              <span data-num="1" class="pag__item pag__item_active"></span>
+              <span data-num="2" class="pag__item"></span>
+              <span data-num="3" class="pag__item"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/_blog.html')
+    </main>
+    @@include('html/_footer.html')
+  </div>
 
-    @@include('html/_script.html', {"js": "homepage"})
-  </body>
+  @@include('html/_script.html', {"js": "homepage"})
+</body>
+
 </html>
