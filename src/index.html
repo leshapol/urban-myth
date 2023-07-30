@@ -15,16 +15,6 @@
               <picture>
                 <source
                   type="image/webp"
-                  media="(min-width: 1920px)"
-                  srcset="
-                    /img/hero-img-big.webp    1x,
-                    /img/hero-img-big@2x.webp 2x
-                  "
-                  width="2560"
-                  height="960"
-                />
-                <source
-                  type="image/webp"
                   media="(min-width: 470px)"
                   srcset="/img/hero-img.webp 1x, /img/hero-img@2x.webp 2x"
                   width="1920"
@@ -38,12 +28,6 @@
                   "
                   width="480"
                   height="720"
-                />
-                <source
-                  media="(min-width: 1920px)"
-                  srcset="/img/hero-img-big.jpg 1x, /img/hero-img-big@2x.jpg 2x"
-                  width="2560"
-                  height="960"
                 />
                 <source
                   media="(min-width: 470px)"
@@ -119,6 +103,7 @@
             </div>
           </div>
         </section>
+
         <section class="advantage">
           <h2 class="visually-hidden">advantages</h2>
           <div class="advantage__wrapper perfect">
@@ -126,7 +111,25 @@
               Perfect kitchens for you 
             </h3>
             <div class="advantage__image perfect__image">
-              <img src="/img/perfect.jpg" alt="" />
+                <source
+                  media="(min-width: 470px)"
+                  data-srcset="/img/perfect.jpg 1x, /img/perfect@2x.jpg 2x"
+                  srcset="
+                  data:image/gif;base64,R0lGODlhCAADAIAAAP///wAAACH5BAEAAAEALAAAAAAIAAMAAAIEjI+pVwA7
+                  "
+                  width="1920"
+                  height="720"
+                />
+                <img
+                  loading="lazy"
+                  class="lazyload"
+                  src="data:image/gif;base64,R0lGODlhAgADAIAAAP///wAAACH5BAEAAAEALAAAAAACAAMAAAICjF8AOw=="
+                  data-srcset="/img/perfect-mobile.jpg    1x, /img/perfect-mobile@2x.jpg 2x"
+                  alt="Perfect kitchens for you"
+                  width="480"
+                  height="720"
+                />
+              </picture>
             </div>
             <div class="container">
               <div class="advantage__body perfect__body">
