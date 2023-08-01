@@ -56,7 +56,66 @@
         <div class="article__slider slider">
           <div class="slider__body container">
             <div class="slider__desc">click to enlarge</div>
-            <ul class="slider__list">
+            <ul class="slider__list" data-slick=" ">
+              <li data-current="1" class="slider__item">
+
+                <a target="_blank" class="slider__popup thumbnail" data-title="Name" data-lightbox="carusel"
+                  href="/img/card.jpg">
+                  <div class="slider__image">
+                    <img src="/img/card.jpg" alt="" />
+                  </div>
+                </a>
+              </li>
+              <li data-current="1" class="slider__item">
+
+                <a class="slider__popup" data-title="Name" data-lightbox="carusel" href="/img/card.jpg">
+                  <div class="slider__image">
+                    <img src="/img/card.jpg" alt="" />
+                  </div>
+                </a>
+
+              </li>
+              <li data-current="1" class="slider__item">
+
+                <a class="slider__popup" data-title="Name" data-lightbox="carusel" href="/img/card.jpg">
+                  <div class="slider__image">
+                    <img src="/img/card.jpg" alt="" />
+                  </div>
+                </a>
+
+              </li>
+              <li data-current="1" class="slider__item">
+
+                <a class="slider__popup" data-title="Name" data-lightbox="carusel" href="/img/card.jpg">
+                  <div class="slider__image">
+                    <img src="/img/card.jpg" alt="" />
+                  </div>
+                </a>
+
+              </li>
+              <li data-current="1" class="slider__item">
+
+                <a class="slider__popup" data-title="Name" data-lightbox="carusel" href="/img/card.jpg">
+                  <div class="slider__image">
+                    <img src="/img/card.jpg" alt="" />
+                  </div>
+                </a>
+
+              </li>
+              <li data-current="1" class="slider__item">
+
+                <a class="slider__popup" data-title="Name" data-lightbox="carusel" href="/img/card.jpg">
+                  <div class="slider__image">
+                    <img src="/img/card.jpg" alt="" />
+                  </div>
+                </a>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--   <ul class="slider__list">
               <li class="slider__item">
                 <div class="slider__image">
                   <img src="/img/card.jpg" alt="" />
@@ -112,10 +171,7 @@
                   <button class="slider__button"></button>
                 </div>
               </li>
-            </ul>
-          </div>
-        </div>
-
+            </ul> -->
         <div class="article__text-block container">
           <p class="article__p">
             The island is a real focal point with this layered effect of two
@@ -167,7 +223,11 @@
     @@include('html/_footer.html')
   </div>
 
+
   @@include('html/_script.html', {"js": "content"})
+  <script defer src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script defer src="https://mreq.github.io/slick-lightbox/dist/slick-lightbox.js"></script>
+  <script defer src="/js/common/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
