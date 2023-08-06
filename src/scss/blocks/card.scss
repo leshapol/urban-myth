@@ -27,6 +27,9 @@
     font-weight: 300;
     margin-right: 30px;
     max-width: 200px;
+    @media (max-width: $md4) {
+      font-size: 24px;
+    }
   }
 
   &__title a {
@@ -44,6 +47,9 @@
   &__text {
     font-size: 18px;
     font-weight: 400;
+    @media (max-width: $md4) {
+      font-size: 14px;
+    }
   }
 }
 

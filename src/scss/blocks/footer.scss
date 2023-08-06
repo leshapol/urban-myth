@@ -9,6 +9,8 @@
     gap: 50px;
     padding-left: 30px;
     padding-right: 30px;
+    max-width: 2000px;
+    margin: 0 auto;
     @media (max-width: $md4) {
       flex-direction: column;
       padding-left: 15px;
@@ -21,8 +23,14 @@
   }
 
   &__column {
-    flex: 0 1 260px;
-    justify-self: center;
+    flex: 0 0 600px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 140px;
+    @media (max-width: $md4) {
+      flex: 0 0 auto;
+      flex-direction: column;
+    }
   }
 
   &__logo {
@@ -32,12 +40,10 @@
   &__social-list {
     display: flex;
     justify-content: space-between;
+
     @media (max-width: $md4) {
       max-width: 240px;
     }
-  }
-
-  &__social-item:not(:last-child) {
   }
 
   &__link {
@@ -46,11 +52,12 @@
       display: none;
     }
   }
+
   &__link_mobile {
     display: none;
-    margin-bottom: 40px;
     @media (max-width: $md4) {
-      display: inline-block;
+      display: inline-flex;
+      margin-bottom: 30px;
     }
   }
 
@@ -100,5 +107,56 @@
   }
   &__item:last-child {
     margin-bottom: 20px;
+  }
+}
+
+.footer {
+  &__row {
+  }
+
+  &__column {
+  }
+
+  &__logo {
+  }
+
+  &__social-list {
+  }
+
+  &__social-item {
+  }
+
+  &__link {
+  }
+
+  &__address {
+  }
+
+  &__tel {
+  }
+
+  &__link-list {
+    display: flex;
+    flex-direction: row;
+    gap: 0px 100px;
+    @media (max-width: $md4) {
+      flex-direction: column;
+    }
+  }
+
+  &__link-list-wrapper {
+  }
+
+  &__title {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+}
+.button {
+  &_footer {
   }
 }

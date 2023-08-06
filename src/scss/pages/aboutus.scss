@@ -9,10 +9,7 @@
   }
 
   &__company {
-    margin-bottom: 150px;
-    @media (max-width: $md2) {
-      margin-bottom: 600px;
-    }
+    margin-bottom: 100px;
   }
 
   &__directors {
@@ -91,7 +88,7 @@
   position: relative;
 
   @media (max-width: $md2) {
-    height: 400px;
+    height: auto;
   }
 
   & .container {
@@ -101,7 +98,7 @@
   }
   &__image {
     @media (max-width: $md2) {
-      height: 100%;
+      height: 400px;
     }
   }
   &__image img {
@@ -124,7 +121,7 @@
     position: relative;
     margin-right: 35px;
     top: 300px;
-    padding: 50px 55px 125px 70px;
+    padding: 50px 55px 70px 70px;
     max-width: 620px;
     border-radius: 0px 75px 75px 75px;
     margin-left: auto;
@@ -135,6 +132,9 @@
       max-width: 100%;
       border-radius: 0px 0px 75px 75px;
       margin: 0;
+    }
+    @media (max-width: $md5) {
+      padding: 50px 30px 30px 30px;
     }
   }
 
@@ -181,6 +181,7 @@
 
   &__item {
     display: flex;
+    position: relative;
     flex-direction: column;
     grid-column: span 2;
     align-items: center;
@@ -192,10 +193,50 @@
       grid-column: span 2;
     }
   }
+
+  &__item:nth-child(2):before {
+    position: absolute;
+    content: "";
+    background-color: #e2e9f2;
+
+    width: 580px;
+    height: 615px;
+    bottom: -50px;
+    border-radius: 250px 0px 200px 0px;
+    z-index: -1;
+
+    @media (max-width: $md2) {
+      width: 480px;
+      height: 515px;
+    }
+    @media (max-width: $md4) {
+      display: none;
+    }
+  }
   &__item:first-child {
     grid-column: 2/4;
     @media (max-width: $md2) {
       grid-column: span 2;
+    }
+  }
+  &__item:first-child:before {
+    position: absolute;
+    content: "";
+    background-color: #e2e9f2;
+
+    width: 525px;
+    height: 550px;
+    bottom: -200px;
+    right: 20px;
+    border-radius: 0px 200px 0px 250px;
+    z-index: -1;
+    @media (max-width: $md2) {
+      right: 0;
+      width: 425px;
+      height: 450px;
+    }
+    @media (max-width: $md4) {
+      display: none;
     }
   }
 

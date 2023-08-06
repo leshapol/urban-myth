@@ -1,6 +1,7 @@
 $fontFamily: "Urbanist", sans-serif;
 $text-color: black;
 $body-bgcolor: #f5f5f5;
+$body-line-height: 1.2;
 
 $mobile-padding: 10px;
 $minWidth: 320px;
@@ -45,5 +46,9 @@ $md5: 479.98px;
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.lock {
   overflow: hidden;
 }

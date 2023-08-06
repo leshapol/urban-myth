@@ -11,6 +11,7 @@
   align-items: center;
   padding-left: 27px;
   padding-right: 27px;
+  text-align: center;
 }
 
 .button--long {
@@ -18,7 +19,9 @@
   padding-right: 63px;
 }
 
-.button--footer {
+.button_footer {
   color: black;
   background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
