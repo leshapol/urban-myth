@@ -597,6 +597,35 @@
   }
 }
 /*========================trustpilot===*/
+.trustpilot {
+  background-color: white;
+  padding-top: 130px;
+  border-radius: 300px 0 0 0;
+  padding-bottom: 300px;
+  margin-bottom: -300px;
+  .container {
+    max-width: 1270px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-family: Helvetica;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    @media (max-width: $md2) {
+      margin-left: 100px;
+    }
+    @media (max-width: $md4) {
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+}
+
+.trustpilot-widget {
+  margin-bottom: 70px;
+}
 
 /*========================about========*/
 .about {
