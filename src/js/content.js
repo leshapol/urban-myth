@@ -1,4 +1,3 @@
-@@include('./libs/lazysizes.min.js', {})
-@@include('pages/header.js', {})
-@@include('common/slick-slider.js', {})
+@@include('common.js', {})
+@@include('pages/homepage.js', {})
 

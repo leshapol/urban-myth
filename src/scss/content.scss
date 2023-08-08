@@ -1,5 +1,8 @@
 // common ***********************************//
-@import "common/common";
+@import "common";
+
+@import "components/slick-lightbox";
+@import "components/slick-theme";
 // blocks ***********************************//
 @import "blocks/button";
 @import "blocks/tags";
