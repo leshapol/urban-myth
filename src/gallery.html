@@ -18,124 +18,10 @@
               gallery for inspiration.
             </p>
           </div>
-          <button type="button" class="catalog__modal-open">
-            <span class="filters__current">filters</span>
-          </button>
-          <form action="#" method="post" class="catalog__form filters">
-            <div class="filters__mobile-wrapper">
-              <p class="filters__name_mobile">
-                filters
-              </p>
-              <div class="filters__close ">
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <div for="" class="filters__wrapper">
-              <div class="filters__header">
-                <span class="filters__current">STYLE</span>
-              </div>
-              <div class="filters__options">
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 3
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 4
-                </label>
-              </div>
-            </div>
-            <div for="" class="filters__wrapper filters__wrapper--active">
-              <div class="filters__header">
-                <span class="filters__current">MATERIAL</span>
-              </div>
-              <div class="filters__options">
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 3
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 4
-                </label>
-              </div>
-            </div>
-            <div for="" class="filters__wrapper">
-              <div class="filters__header">
-                <span class="filters__current">LAYOUT</span>
-              </div>
-              <div class="filters__options">
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 3
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 4
-                </label>
-              </div>
-            </div>
-            <div for="" class="filters__wrapper">
-              <div class="filters__header">
-                <span class="filters__current">BRANDS</span>
-              </div>
-              <div class="filters__options">
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 2
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 3
-                </label>
-                <label class="filters__label">
-                  <input type="checkbox" class="filters__input" />
-                  Value 4
-                </label>
-              </div>
-            </div>
-            <div class="filters__button-container">
-              <button type="reset" class="filters__button_mobile">
-                reset
-              </button>
-              <button type="submit" class="filters__button_mobile">
-                save
-              </button>
-            </div>
-            <label class="catalog__label">
-              <input type="checkbox" class="catalog__input" />
-              CASE STUDIES
-            </label>
-          </form>
+          <a href="filters" class="catalog__modal-open _popup-link">
+            <span class="filters__current">filter</span>
+          </a>
+
           <div class="catalog__catalog-list catalog-list">
             <ul class="catalog-list__list">
               <li class="catalog-list__item card">
@@ -147,6 +33,8 @@
                     <a href="#"> Lorem ipsum</a>
                   </h3>
                   <ul class="card__tags tags">
+
+                    <li class="card__tag tags__item">BOOK FREE CONSULATION</li>
                   </ul>
                 </div>
                 <div class="card__text">
@@ -312,7 +200,7 @@
     <!-- popup's -->
 
     @@include('html/_popup_newsletter.html')
-
+    @@include('html/_popup_filters.html')
 
     <!------------->
     @@include('html/_footer.html')
