@@ -47,7 +47,7 @@
   }
   &__tel a:before {
     content: "";
-    background: url("/img/icons/tel.svg") center / contain no-repeat;
+    background: url("../img/icons/tel.svg") center / contain no-repeat;
     position: absolute;
     width: 16px;
     height: 16px;
@@ -71,7 +71,7 @@
   }
   &__broshure a:before {
     content: "";
-    background: url("/img/icons/libr.svg") center / contain no-repeat;
+    background: url("../img/icons/libr.svg") center / contain no-repeat;
     position: absolute;
 
     width: 16px;
