@@ -29,6 +29,19 @@
   &__list {
     display: flex;
     height: 380px;
+    position: relative;
+    overflow-x: auto;
+  }
+
+  /* Скрываем scrollbar для Chrome, Safari и Opera */
+  &__list::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Скрываем scrollbar для IE, Edge и Firefox */
+  &__list {
+    -ms-overflow-style: none; /* IE и Edge */
+    scrollbar-width: none; /* Firefox */
   }
 
   &__item {
@@ -36,6 +49,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
   }
   &__item:not(:last-child) {
     margin-right: 65px;
