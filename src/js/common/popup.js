@@ -68,3 +68,11 @@ document.addEventListener("keydown", function (e) {
     popup_close();
   }
 });
+
+let header = document.querySelectorAll(".popup-form-select__header");
+for (let heade of header) {
+  heade.onclick = function () {
+    heade.classList.toggle("popup-form-select__header_active");
+  };
+}
+//-----------------------------//

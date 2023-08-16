@@ -84,12 +84,7 @@
   }
 }
 .company {
-  height: 705px;
   position: relative;
-
-  @media (max-width: $md2) {
-    height: auto;
-  }
 
   & .container {
     @media (max-width: $md3) {
@@ -97,22 +92,20 @@
     }
   }
   &__image {
+    height: 705px;
+    max-width: 1800px;
+    margin: 0 auto;
     @media (max-width: $md2) {
       height: 400px;
     }
   }
   &__image img {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
     object-fit: cover;
     object-position: 50% 100%;
-    @media (max-width: $md2) {
-      position: relative;
-    }
+    position: relative;
   }
 
   &__body {
@@ -120,19 +113,13 @@
     z-index: 10;
     position: relative;
     margin-right: 35px;
-    top: 300px;
     padding: 50px 55px 70px 70px;
-    max-width: 620px;
+    max-width: 1000px;
     border-radius: 0px 75px 75px 75px;
-    margin-left: auto;
-    @media (max-width: $md2) {
-      top: 0;
-      margin: 0;
-      display: block;
-      max-width: 100%;
-      border-radius: 0px 0px 75px 75px;
-      margin: 0;
-    }
+    margin: 0 auto;
+    display: block;
+    border-radius: 0px 0px 75px 75px;
+
     @media (max-width: $md5) {
       padding: 50px 30px 30px 30px;
     }
