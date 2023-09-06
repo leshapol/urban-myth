@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.html', {"title": "Contact", "css": "contact"})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.html')
+
+    <main>
+      <section class="contact">
+        <div class="contact__header page-head container">
+          <h1 class="page-head__title">Contact us</h1>
+          <p class="page-head__desc">
+            From bespoke fitted wardrobes to walk-in dressing rooms you can
+            have your bedroom furniture any way you want it and as it’s from
+            Urban Myth you know it will be expertly designed, precision
+            manufactured and professionally installed.
+          </p>
+        </div>
+        <div class="contact__body container">
+          <form class="contact__form popup-form">
+
+            <label class="popup-form__label popup-form__label_select">Subject:
+              <div class="popup-form__label popup-form-select__wrapper">
+                <div class="popup-form-select__header">
+                  <span class="popup-form-select__current">Select...</span>
+                </div>
+                <div class="popup-form-select__options">
+                  <label class="popup-form-select__label">
+                    <input
+                      type="checkbox"
+                      class="popup-form-select__input"
+                    />
+                    Value 2
+                  </label>
+                  <label class="popup-form-select__label">
+                    <input
+                      type="checkbox"
+                      class="popup-form-select__input"
+                    />
+                    Value 2
+                  </label>
+                  <label class="popup-form-select__label">
+                    <input
+                      type="checkbox"
+                      class="popup-form-select__input"
+                    />
+                    Value 2
+                  </label>
+                  <label class="popup-form-select__label">
+                    <input
+                      type="checkbox"
+                      class="popup-form-select__input"
+                    />
+                    Value 2
+                  </label>
+                  <label class="popup-form-select__label">
+                    <input
+                      type="checkbox"
+                      class="popup-form-select__input"
+                    />
+                    Value 2
+                  </label>
+                  <label class="popup-form-select__label">
+                    <input
+                      type="checkbox"
+                      class="popup-form-select__input"
+                    />
+                    Value 3
+                  </label>
+                  <label class="popup-form-select__label">
+                    <input
+                      type="checkbox"
+                      class="popup-form-select__input"
+                    />
+                    Value 4
+                  </label>
+                </div>
+              </div>
+
+
+            </label>
+
+            <label class="popup-form__label">Name:
+              <input
+                type="text"
+                class="popup-form__input"
+              >
+            </label>
+            <label class="popup-form__label">Email:
+              <input
+                type="mail"
+                class="popup-form__input"
+              >
+            </label>
+            <label class="popup-form__label">Tel:
+              <input
+                type="mail"
+                class="popup-form__input"
+              >
+            </label>
+            <label class="popup-form__label">Message:
+              <input
+                type="mail"
+                class="popup-form__input popup-form__input_high"
+              >
+            </label>
+            <div class="popup-form__privacy">
+              <div class="popup-form__privacy-caption">
+                Privacy
+              </div>
+              <label class="popup-form__label-privacy">
+                <input
+                  type="checkbox"
+                  class="popup-form__input-checkbox"
+                >
+                I have read and accept the Urban Myth Privacy Policy
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="popup-form__submit button "
+            >
+              BOOK APPOINTMENT
+            </button>
+          </form>
+          <div class="contact__map-wrapper ">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2477.7669669421407!2d-0.03169292377639002!3d51.60915830326494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761e72017283c3%3A0xadf5a0e674acc213!2sUrban%20Myth!5e0!3m2!1sru!2sru!4v1694001009444!5m2!1sru!2sru"
+              width="870"
+              height="750"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+      </section>
+
+      @@include('html/_blog.html')
+    </main>
+    <!-- popup's -->
+
+    @@include('html/_popup_newsletter.html')
+    @@include('html/_popup_filters.html')
+    @@include('html/_popup_brochure-request.html')
+    @@include('html/_popup_book-app.html')
+
+    <!------------->
+    @@include('html/_footer.html')
+  </div>
+
+  @@include('html/_script.html', {"js": "contact"})
+</body>
+
+</html>

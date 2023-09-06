@@ -1,0 +1,19 @@
+.contact {
+  &__header {
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+  }
+
+  &__form {
+  }
+
+  &__map-wrapper {
+  }
+}
