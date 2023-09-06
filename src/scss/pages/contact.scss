@@ -7,11 +7,11 @@
     flex-direction: row;
     height: auto;
     justify-content: space-between;
-
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 
   &__form {
+    max-width: 500px;
   }
 
   &__map-wrapper {
